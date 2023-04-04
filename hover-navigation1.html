@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Navigation</title>
+    <style>
+        .main {
+            margin: 0px;
+            padding: 10px;
+            background-color: chocolate;
+        }
+
+        .nav {
+            margin: 0px;
+            padding: 5px;
+            background-color: wheat;
+            position: relative;
+            
+        }
+
+        .menu {
+            display: inline;
+            list-style: none;
+            padding: 22px 10px;
+            margin: 0px 10px;
+            background-color: grey;
+           
+            
+        }
+
+        .sub {
+            
+            margin: 0px;
+            padding: 20px;
+            width: 500px;
+            height: 300px;
+            background-color: green;
+            position: absolute;
+            top: 100%;
+            left: 54px;
+            visibility: hidden;
+            display: flex;
+        }
+
+        .menu:hover .sub{ visibility: visible;}
+
+
+
+        .left {
+            margin: 0px;
+            padding: 10px;
+            background-color: grey;
+            width: 150px;
+            height: 280px;
+        }
+
+        .left li {
+            margin: 5px 0px;
+            padding: 5px 0px;
+            border: 1px solid;
+        }
+
+        .left li:hover .right  { visibility: visible;}
+
+        .right {
+            margin: 0px;
+            padding: 10px;
+            background-color: lightpink;
+            width: 330px;
+            height: 280px;
+            visibility: hidden;
+            position: absolute;
+            top: 20px;
+            right: 10px;
+            display: flex;
+        }
+
+        .x {
+            margin: 0 10px;
+            padding: 5px;
+            border: 1px solid;
+            width: 134px;
+        }
+
+        .x:hover { background-color: #cbcbcb;}
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <div class="nav">
+            <ul>
+                <li class="menu">News
+                    <div class="sub">
+                        <div class="left">
+                            <ul>
+                                <li>Fashion 
+                                    <div class="right">
+                                        <div class="x">Fashion 1</div>
+                                        <div class="x">Fashion 2</div>
+                                    </div>
+                                </li>
+                                <li>Technology 
+                                    <div class="right">
+                                        <div class="x">Technology 1</div>
+                                        <div class="x">Technology 2</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu">Entertainment
+                    <div class="sub">
+                        <div class="left">
+                            <ul>
+                                <li>Entertainment 1 
+                                    <div class="right">
+                                        <div class="x">ent 1</div>
+                                        <div class="x">ent 2</div>
+                                    </div>
+                                </li>
+                                <li>Entertainment 2 
+                                    <div class="right">
+                                        <div class="x">Technology 1</div>
+                                        <div class="x">Technology 2</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu">News</li>
+            </ul>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
